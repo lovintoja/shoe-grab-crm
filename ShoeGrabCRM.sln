@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoeGrabCRM", "shoe-grab-crm\ShoeGrabCRM.csproj", "{89084783-7849-441B-8812-E3FE07B4FFB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FD0E5E37-0154-4EFB-9307-7A248702C36D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoeGrabCRMTests", "shoe-grab-tests\ShoeGrabCRMTests.csproj", "{0D19D063-41C4-4AE7-872F-789EEA0CC05F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89084783-7849-441B-8812-E3FE07B4FFB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89084783-7849-441B-8812-E3FE07B4FFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89084783-7849-441B-8812-E3FE07B4FFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89084783-7849-441B-8812-E3FE07B4FFB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D19D063-41C4-4AE7-872F-789EEA0CC05F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D19D063-41C4-4AE7-872F-789EEA0CC05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D19D063-41C4-4AE7-872F-789EEA0CC05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D19D063-41C4-4AE7-872F-789EEA0CC05F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D19D063-41C4-4AE7-872F-789EEA0CC05F} = {FD0E5E37-0154-4EFB-9307-7A248702C36D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD2482C8-3BC1-495F-8F69-1FCDB552C0BF}
+	EndGlobalSection
+EndGlobal
