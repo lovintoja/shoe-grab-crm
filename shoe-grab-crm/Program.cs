@@ -15,11 +15,11 @@ builder.WebHost.ConfigureKestrel(options =>
         listenOptions.UseHttps("Resources\\server.pfx", "test123", httpsOptions =>
         {
             httpsOptions.ClientCertificateMode = ClientCertificateMode.RequireCertificate;
-            httpsOptions.ClientCertificateValidation = (certificate, chain, errors) =>
-            {
-                return certificate.Thumbprint == "ExpectedClientThumbprint";
-            };
         });
+    });
+    options.Listen(IPAddress.Any, 5081, listenOptions =>
+    {
+        listenOptions.Protocols = HttpProtocols.Http1;
     });
 });
 
