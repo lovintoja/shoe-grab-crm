@@ -1,0 +1,6 @@
+@ShoeGrabCRM_HostAddress = http://localhost:5081
+
+GET {{ShoeGrabCRM_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
