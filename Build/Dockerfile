@@ -11,4 +11,4 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 COPY --from=build /out .
 EXPOSE 10031
-ENTRYPOINT ["dotnet", "shoe-grab-crm.dll"]
+ENTRYPOINT ["dotnet", "ShoeGrabCRM.dll"]
