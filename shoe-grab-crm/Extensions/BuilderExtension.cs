@@ -17,7 +17,7 @@ public static class BuilderExtension
             if (grpcEndpoint.Exists())
             {
                 var grpcUrl = new Uri(grpcEndpoint["Url"]);
-                options.Listen(IPAddress.Any, grpcUrl.Port, listenOptions =>
+                options.Listen(IPAddress.Parse(grpcUrl.Host), grpcUrl.Port, listenOptions =>
                 {
                     listenOptions.Protocols = Enum.Parse<HttpProtocols>(grpcEndpoint["Protocols"]);
                     listenOptions.UseHttps(httpsOptions =>
