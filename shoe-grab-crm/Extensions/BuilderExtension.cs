@@ -21,7 +21,7 @@ public static class BuilderExtension
             var grpcEndpoint = kestrelSection.GetSection("Grpc");
             if (grpcEndpoint.Exists())
             {
-                var grpcUrl = new Uri(grpcEndpoint["Url"]);
+                var grpcUrl = new Uri(Environment.GetEnvironmentVariable("CRM_GRPC_URI"));
                 options.Listen(IPAddress.Parse(grpcUrl.Host), grpcUrl.Port, listenOptions =>
                 {
                     listenOptions.Protocols = Enum.Parse<HttpProtocols>(grpcEndpoint["Protocols"]);
