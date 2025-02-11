@@ -9,6 +9,11 @@ public static class BuilderExtension
 {
     public static void SetupKestrel(this WebApplicationBuilder builder)
     {
+        builder.WebHost.UseKestrel(options =>
+        {
+            options.Configure();
+        });
+
         builder.WebHost.ConfigureKestrel((context, options) =>
         {
             var kestrelSection = context.Configuration.GetSection("Kestrel:Endpoints");
